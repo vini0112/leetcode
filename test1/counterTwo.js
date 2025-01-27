@@ -6,7 +6,7 @@ let createCounter = function(init){
         
         decrement: () => init2 -= 1,
         
-        reset: () => init
+        reset: () => init2 = init
         
     }
 }
