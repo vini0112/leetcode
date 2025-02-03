@@ -2,20 +2,15 @@
 
 
 function sequenciaFibonasi(n){
-
-    if(n <= 0){
-        return n
-    } 
-
-    let a = 0, b = 1
+    if(n < 2) return false
+    let fib = [0, 1]
 
     for(let i = 2;i <= n;i++){
-        let temp = a + b
-        a = b
-        b = temp
+        fib[i] = fib[i-1] + fib[i-2]
     }
-
-    return b
+    return fib
 }   
 
-console.log(10)
+console.log(sequenciaFibonasi(3))
+
+
