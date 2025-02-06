@@ -1,5 +1,5 @@
 let arr = [1,2,3,4,5]
-let size = 1
+let size = 2
 
 var chunk = function(arr, size) {
     let subArray = []
