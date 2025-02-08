@@ -1,4 +1,6 @@
 
+// returna o index do de T
+
 let arr = [1, 3, 4, 6, 7]
 let t = 6
 
