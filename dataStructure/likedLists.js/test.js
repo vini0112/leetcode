@@ -78,6 +78,28 @@ class linkedList{
         }
     }
 
+    remove(index){
+        if(index < 0 || index >= this.size){
+            return null
+        }
+
+        let removeNode 
+        if(index === 0){
+            removeNode = this.head
+            this.head = this.head.next
+        }else{
+            let prev = this.head
+            for(let i = 0;i < index-1;i++){
+                prev = prev.next
+            }
+            
+            removeNode = prev.next
+            prev.next = removeNode.next
+        }
+
+        this.size--
+    }
+
 
 }
 
@@ -85,6 +107,8 @@ class linkedList{
 const queue = new linkedList()
 queue.append(2)
 queue.append(20)
-// queue.insert(1, 1)
-
+queue.append(5)
+// queue.remove(4)
+queue.pront()
 console.log(queue.print())
+// queue.stand()

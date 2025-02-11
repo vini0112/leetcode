@@ -60,15 +60,78 @@ class linkedList{
         }
     }
 
-    stand(){
-        return this.head.next
+    insert(value, index){
+        if(index < 0 || index > this.size || index == null){
+            return
+        }
+        if(index === 0){
+            this.prepend(value)
+        }else{
+            const node = new Node(value) 
+            let prev = this.head
+            for(let i = 0;i < index-1;i++){ // index-1 because we're taking the previous node of the index that we gonna insert and make it to point to next
+                prev = prev.next
+            }
+            node.next = prev.next 
+            prev.next = node
+            this.size++
+        }
     }
 
+    removeFrom(index){
+        if(index < 0 || index >= this.size){
+            return null
+        }
+        let removeNode
+        if(index === 0){
+            removeNode = this.head
+            this.head = this.head.next
+        }else{
+            let prev = this.head
+            for(let i = 0;i < index-1;i++){
+                prev = prev.next
+            }
+            removeNode = prev.next
+            prev.next = removeNode.next
+        }
+        this.size--
+        return removeNode.value
+
+    }
+
+    removingValue(value){
+        if(this.isEmpty()){
+            return null
+        }
+        
+        if(this.head.value === value){
+            this.head = this.head.next
+            // console.log(this.head)
+            this.size--
+            return value
+        }else{
+            let prev = this.head
+            while(prev.next && prev.next.value !== value){
+                prev = prev.next
+            }
+
+            if(prev.next){
+                const removeNode = prev.next
+                prev.next = removeNode.next
+                this.size--
+                return value
+            }
+            return null // if the pointer prev reaches the last node which is null, we return null
+        }
+    }
 
 }
 
 
 const queue = new linkedList()
 queue.append(2)
-// queue.append(5)
-console.log(queue.stand())
+queue.append(5)
+// console.log(queue.removeFrom())
+queue.removingValue(5)
+console.log(queue.print())
+
