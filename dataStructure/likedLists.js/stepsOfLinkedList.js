@@ -125,6 +125,48 @@ class linkedList{
         }
     }
 
+    // best use while when handling with value
+    searchValue(value){
+        if(this.isEmpty()){
+            return 'Empty'
+        }
+
+        if(this.head.value === value){
+            return value
+        }else{
+            let prev = this.head
+            while(prev.next && prev.next.value !== value){
+                prev = prev.next
+            }
+
+            if(prev.next){
+                return value
+            }
+
+            return null
+        }
+        
+        
+    }
+
+    // best use for when handling with index
+    searchByIndex(index){
+        if(this.isEmpty() || index < 0 || index == null || index >= this.size){
+            return null
+        }
+
+        if(index === 0){
+            return this.head.value
+        }else{
+            let prev = this.head
+            for(let i = 0;i < index;i++){
+                prev = prev.next
+            }
+            return prev.value
+        }
+
+    }
+
 }
 
 

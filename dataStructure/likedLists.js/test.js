@@ -100,15 +100,97 @@ class linkedList{
         this.size--
     }
 
+    searchValue(value){
+        if(this.isEmpty()){
+            return 'Empty'
+        }
+
+        if(this.head.value === value){
+            return value
+        }else{
+            let prev = this.head
+            while(prev.next && prev.next.value !== value){
+                prev = prev.next
+            }
+
+            if(prev.next){
+                return value
+            }
+
+            return null
+        }
+        
+        
+    }
+
+    searchIndexByValue(value){
+        if(this.isEmpty()){
+            return 'Empty'
+        }
+
+        let i = 0
+        if(this.head.value === value){
+            return i
+        }else{
+            let curr = this.head
+            while(curr){
+                if(curr.value === value){
+                    return i
+                }
+                curr = curr.next
+                i++
+            }
+            return 'Not found!'
+        }
+
+        
+    }
+
+    searchByIndex(index){
+        if(this.isEmpty() || index < 0 || index == null || index >= this.size){
+            return null
+        }
+
+        if(index === 0){
+            return this.head.value
+        }else{
+            let prev = this.head
+            for(let i = 0;i < index;i++){
+                prev = prev.next
+            }
+            return prev.value
+        }
+
+    }
+
+
+    reverse(){
+        let prev = null
+        let curr = this.head
+        while(curr){
+            let next = curr.next // adiantamos um
+            curr.next = prev // o que adiatamos recebe null
+            prev = curr // recebe o primeiro
+            curr = next // o primeiro recebe o proximo
+        }
+
+        this.head = prev // primeiro valor para null
+    }
+
 
 }
 
 
 const queue = new linkedList()
 queue.append(2)
-queue.append(20)
+queue.append(4)
 queue.append(5)
 // queue.remove(4)
-queue.pront()
+// queue.pront()
+// console.log(queue.searchValue(2))
+// console.log(queue.searchByIndex(2))
+// console.log(queue.searchIndexByValue())
+
+queue.reverse()
 console.log(queue.print())
 // queue.stand()
