@@ -10,9 +10,9 @@ class Hashtable{
     hash(key){
         let total = 0
         for(let i = 0;i < key.length;i++){
-            total += key.charCodeAt(i)
+            total += key.charCodeAt(i) //Convert characters to numeric values
         }
-        return total % this.size
+        return total % this.size // Ensure the index is within bounds
     }
 
     set(key, value){
@@ -20,21 +20,13 @@ class Hashtable{
         if(!this.table[index]){
             this.table[index] = []
         }
-
-        this.table[index].push(key, value)
+        this.table[index].push([key, value])
     }
 
     get(key){
         const index = this.hash(key)
-        const table = this.table[index]
-        if(table){
-            for(let pair of table){
-                if(pair[0] === key){
-                    return pair[1]
-                }
-            }
-        }
-        return undefined
+        console.log(this.table[index])
+        
     }
 
     remove(key){
