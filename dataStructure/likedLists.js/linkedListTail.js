@@ -48,6 +48,38 @@ class linkedTailList{
         this.size++
     }
 
+    removeFromFront(){
+        if(this.isEmpty()){
+            return null
+        }
+        const value = this.head.value  // taking the first value
+        this.head = this.head.next  //passing the first node to secund, erasing the first
+        this.size--
+        return value
+    }
+
+    removeFromEnd(){
+        if(this.isEmpty()){
+            return null
+        }
+
+        const value = this.tail
+        
+        if(this.size === 1){
+            this.tail = null 
+            this.head = null
+        }else{
+            let prev = this.head
+            while(prev.next !== this.tail){ // takes the value before the tail
+                prev = prev.next
+            }
+            prev.next = null // the last value
+            this.tail = prev // passing the new last value to tail
+        }
+        this.size--
+        return value
+    }
+
 
     print(){
         if(this.isEmpty()){
@@ -65,8 +97,7 @@ class linkedTailList{
 
 }
 
-const queue = new linkedTailList()
+// const queue = new linkedTailList()
 
-queue.append(3)
-queue.append(2)
-console.log(queue.print())
+export default linkedTailList
+
