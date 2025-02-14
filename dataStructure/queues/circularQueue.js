@@ -67,6 +67,9 @@ class CircularQueue{
         }else{
             let i 
             let str = ''
+            // i starts at front(0)
+            //while i unlike this.rear keep counting
+            // to move circulatory (i+1) % this.capacity
             for(i = this.front;i !== this.rear;i = (i+1) % this.capacity){
                 str += this.items[i] + " "
             }
