@@ -53,18 +53,58 @@ class BinarySearch{
     }
 
 
-    search(root, value){
-        
+    levelOrder(){
+        const queue = []
+        queue.push(this.root)
+        while(queue.length){
+            let curr = queue.shift()
+            console.log(curr.value)
+            if(curr.left){
+                queue.push(curr.left)
+            }
+            if(curr.right){
+                queue.push(curr.right)
+            }
+        }
     }
 
+    searchMax(){
+        // console.log(this.root.right)
+        if(this.root.right === null){
+            console.log(this.root.value)
+        }else{
+        }
+    }
+
+    min(root){
+        if(!root.left){
+            return root.value
+        }else{
+            return this.min(root.left) // taking the last value of left node
+        }
+    }
+
+    max(root){
+        if(!root.right){
+            return root.value
+        }else{
+            return this.max(root.right) // take the last value of right node
+        }
+    }
+
+    
 
 }
 
 const tree = new BinarySearch()
-tree.insert(15)
-tree.insert(8)
+// tree.insert(15)
+// tree.insert(8)
 tree.insert(20)
-tree.insert(10)
+tree.insert(21)
+tree.insert(25)
 tree.insert(9)
 tree.insert(5)
-tree.preOrder(tree.root)
+// tree.preOrder(tree.root)
+// tree.levelOrder()
+console.log(tree.max(tree.root))
+// console.log(tree.min(tree.root))
