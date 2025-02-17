@@ -92,6 +92,36 @@ class BinarySearch{
         }
     }
 
+    delete(value){
+        this.root = this.deleteNode(this.root, value)
+    }
+
+    deleteNode(root, value){
+        if(root === null){
+            return root
+        }
+
+        if(value < root.value){ // se valor menor que root
+            root.left = this.deleteNode(root.left, value)
+        }else if(value > root.value){ // se valor maior que root
+            root.right = this.deleteNode(root.right, value)
+        }else{ // se valor igual a root
+            if(!root.left && !root.right){
+                return null
+            }
+        
+            if(!root.left){
+                return root.right
+            }else if(!root.right){
+                return root.left
+            }
+
+            root.value = this.min(root.right)
+            root.right = this.deleteNode(root.right, root.left)
+        }
+        return root
+    }
+
     
 
 }
@@ -105,6 +135,7 @@ tree.insert(25)
 tree.insert(9)
 tree.insert(5)
 // tree.preOrder(tree.root)
-// tree.levelOrder()
-console.log(tree.max(tree.root))
+tree.deleteNode(tree.root, 5)
+tree.levelOrder()
+// console.log(tree.max(tree.root))
 // console.log(tree.min(tree.root))
