@@ -1,4 +1,5 @@
 let s = "abc"
-let t = "ahbgdc"
+let t = "ahgdc"
 // subsequence
 // return true or false
+
