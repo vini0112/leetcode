@@ -3,69 +3,104 @@ let mat = [
     [4, 5, 6],
     [7, 8, 9]
 ]
+let mat2 = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+
+let mat3 = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+    [13,14,15,16],
+    [17,18,19,20],
+    [21,22,23,24]]
+
 
 function spiral(matrix){
     let left = 0
     let top = 0
-    let right = matrix[0].length
+    let right = matrix[0].length-1
     let bottom = matrix.length - 1
     let size = matrix.length*matrix[0].length
     let nums = []
-    let cont = 0
     
     while(nums.length < size){
-        
-        //               0     3
-        for(let i = left;i < right && nums.length < size;i++){ // roda 3x
-                        //    0   0
-            nums.push(matrix[top][i]) // coloca os tres de cima
+        // primeira fila
+        for(let i = left;i <= right && nums.length < size;i++){
+            nums.push(matrix[top][i])
         }
-        top++ // top vira 1 para descer para row 2
 
-         // GRAPH -> left to right
-        // 1 2 3
-        
+        top++ // 1
 
-
-
-        //           1         2       
-        for(let i = top;i < bottom && nums.length < size;i++){ // roda 2x
-                                // 3
-            nums.push(matrix[i][bottom]) // exibira 3x 
+        // desce da direita
+        for(let i = top;i <= bottom && nums.length < size;i++){
+            nums.push(matrix[i][right])
         }
-        right-- // diminui 1 de right, ent right == 2
 
-        // GRAPH -> two down
-        // 1 2 3
-        //     6
-        
-        
+        right-- // 1
 
-        //             2        0
-        for(let i = right;i >= left && nums.length < size;i--){
-                    //         2     2
-            nums.push(matrix[bottom][i])
+        if(top <= bottom){
+            // last row
+            for(let i = right;i >= left && nums.length < size;i--){
+                nums.push(matrix[bottom][i])
+            }
+            bottom-- 
         }
-        bottom-- // bottom menus um, ent == 1
-
-        // GRAPH -> all from bottom 
-        // 1 2 3
-        //     6
-        // 7 8 9
-
-
-
-        //             1         2
-        for(let i = bottom;i >= top && nums.length < size;i--){
-            nums.push(matrix[i][left])
-            
+        
+        if(left <= right){
+        // going up in the last bound 
+            for(let i = bottom;i >= top && nums.length < size;i--){
+                nums.push(matrix[i][left])
+            } 
+            left++
         }
-        left++
-        // GRAPH -> added 4 and 5
-        // 1 2 3
-        // 4 5 6
-        // 7 8 9
+
     }
-    return cont
+
+    return nums
 }
-console.log(spiral(mat))
+
+
+console.log(spiral(mat2))
+
+// var spiralOrder = function(matrix) {
+
+//     let left = 0
+//     let top = 0
+//     let right = matrix[0].length-1
+//     let bottom = matrix.length - 1
+//     let size = matrix.length*matrix[0].length
+//     let nums = []
+    
+//     while(nums.length < size){
+
+//         for(let i = left;i <= right && nums.length < size;i++){
+//             nums.push(matrix[top][i])
+//         }
+
+//         top++ // 1
+
+//         for(let i = top;i <= bottom && nums.length < size;i++){
+//             nums.push(matrix[i][right])
+//         }
+
+//         right-- // 1
+
+//         for(let i = right;i >= left && nums.length < size;i--){
+//             nums.push(matrix[bottom][i])
+//         }
+
+//         bottom--
+        
+//         for(let i = bottom;i >= top && nums.length < size;i--){
+//             nums.push(matrix[i][left])
+//         }
+//         left++
+//     }
+
+//     return nums
+    
+// };
+
