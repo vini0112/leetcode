@@ -12,5 +12,10 @@ const romanNum = {
     M: 1000
 }
 
+let intervals = [[1,3],[2,6],[8,10],[15,18]]
 
+function merging(inter){
 
+}
+
+console.log(merging(intervals))
