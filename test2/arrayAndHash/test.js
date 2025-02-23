@@ -1,6 +1,13 @@
 let prices = [7,1,5,3,6,4]
 // BUY THE CHEAPER AND SELL IN THE HIGHT 
 
+// function stocks(prices){
+    
+// }
+
+// console.log(stocks(prices))
+
+
 // ROMAN NUMBERS
 const romanNum = {
     I: 1,
@@ -12,10 +19,14 @@ const romanNum = {
     M: 1000
 }
 
-let intervals = [[1,3],[2,6],[8,10],[15,18]]
+//OVERLAPPING VALUES
+// let intervals = [[1,3],[2,6],[8,10],[15,18], [16,25]]
 
-function merging(inter){
+// function merging(inter){
 
-}
 
-console.log(merging(intervals))
+// }
+
+// console.log(merging(intervals))
+
+
