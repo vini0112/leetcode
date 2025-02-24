@@ -20,13 +20,13 @@ const romanNum = {
 }
 
 //OVERLAPPING VALUES
-// let intervals = [[1,3],[2,6],[8,10],[15,18], [16,25]]
+let intervals = [[1,3],[2,6],[8,10],[15,18], [16,25]]
 
-// function merging(inter){
+function merging(inter){
 
 
-// }
+}
 
-// console.log(merging(intervals))
+console.log(merging(intervals))
 
 
