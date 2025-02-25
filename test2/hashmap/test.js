@@ -1,11 +1,13 @@
 
 // try to conctruct ransom with magazine letters
 
-let ransomNote = "abc", magazine = "ajac"
+let ransomNote = "abc", magazine = "ajbc"
 
-// function random(ransom, magazine){
+function random(ransom, magazine){
     
-// }
+    
+
+}
 
 // console.log(random(ransomNote, magazine))
 
@@ -14,9 +16,10 @@ let ransomNote = "abc", magazine = "ajac"
 // Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 let s = "anagram", t = "nagaram" // this is true they have the same letters
 
-// function anagram(s, t){
+function anagram(s, t){
 
-// }
+    
+}
 
 // console.log(anagram(s, t))
 
@@ -33,7 +36,7 @@ let text = "nlaelbkoooollnba"
 
 let board = [
     [
-    '5', '3', '0',
+    '5', '3', '.',
     '.', '7', '.',
     '.', '.', '.'
     ],
@@ -81,11 +84,27 @@ let board = [
 
 function sudoku(board){
     
-    
+
 }
 
 
 // console.log(sudoku(board))
+
+
+
+
+// join the iquals anagrams
+let strs = ["eat","tea","tan","ate","nat","bat"]
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+function grupingAnagram(strs){
+
+    
+
+}
+
+
+// console.log(grupingAnagram(strs))
 
 
         
