@@ -5,7 +5,6 @@ let ransomNote = "abc", magazine = "ajbc"
 
 function random(ransom, magazine){
     
-    
 
 }
 
@@ -84,7 +83,7 @@ let board = [
 
 function sudoku(board){
     
-
+    
 }
 
 
@@ -98,7 +97,6 @@ let strs = ["eat","tea","tan","ate","nat","bat"]
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 function grupingAnagram(strs){
-
     
 
 }
@@ -106,5 +104,14 @@ function grupingAnagram(strs){
 
 // console.log(grupingAnagram(strs))
 
+
+// MAJORITY ELEMENT
+let nums = [3,2,3] // 3
+let nums2 = [2,2,1,1,1,2,2] // 2
+function majority(nums){
+    
+}
+
+// console.log(majority(nums))
 
         
