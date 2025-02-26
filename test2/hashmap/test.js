@@ -109,9 +109,21 @@ function grupingAnagram(strs){
 let nums = [3,2,3] // 3
 let nums2 = [2,2,1,1,1,2,2] // 2
 function majority(nums){
-    
+
 }
 
-// console.log(majority(nums))
+// console.log(majority(nums2))
+
+
+// LONGEST SEQUENCE
+
+let Exnums = [100,4,200,1,3,2] // 4
+let Exnums2 = [0,3,7,2,5,8,4,6,0 ,1] // 9
+let Exnums3 = [9,1,4,7,3,-1,0,5,8,-1,6] // 7
+function longest(num){
+
+}
+
+console.log(longest(nums))
 
         
