@@ -22,14 +22,15 @@ function reversing(s){
     
 }
 
-// console.log(reversing(me))
+// console.log(reversing())
 
 
 
 // TWO SUM II - U HAVE TO RETURN THE INDEXS OF THE SUM 
-
+let numbers = [2, 3, 4, 7 ,15], target = 9
 
 function twoSum2(nums, targ){
+
 
 
 }
@@ -44,10 +45,27 @@ function twoSum2(nums, targ){
 let pa = "A man, a plan, a canal: Panama"
 
 function palindrome(s){
-
-
+    
+    
 }
 
-console.log(palindrome(pa))
+// console.log(palindrome(pa))
+
+
+
+// THREE SUM
+
+
+// nums[i] + nums[j] + nums[k] == 0
+// [[-1,-1,2],[-1,0,1]]
+
+let threeS = [-1,0,1,2,-1,-4]
+
+function threeSum(nums){
+    
+}
+
+
+// console.log(threeSum(threeS))
 
 

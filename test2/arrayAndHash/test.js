@@ -1,9 +1,9 @@
 let prices = [7,1,5,3,6,4]
 // BUY THE CHEAPER AND SELL IN THE HIGHT 
 
-// function stocks(prices){
+function stocks(prices){
     
-// }
+}
 
 // console.log(stocks(prices))
 
@@ -23,10 +23,9 @@ const romanNum = {
 let intervals = [[1,3],[2,6],[8,10],[15,18], [16,25]]
 
 function merging(inter){
-
-
+    
 }
 
-console.log(merging(intervals))
+// console.log(merging(intervals))
 
 
