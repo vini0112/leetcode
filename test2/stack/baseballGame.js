@@ -1,4 +1,9 @@
 
+// + -> Record a new score that is the sum of the previous two scores
+// D -> Record a new score that is the double of the previous score
+// C -> Invalidate the previous score, removing it from the record
+
+
 let ops = ["5","2","C","D","+"]
 function baseballgame(operations) {
     let scoresAdded = []

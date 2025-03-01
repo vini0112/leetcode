@@ -24,8 +24,19 @@ let intervals = [[1,3],[2,6],[8,10],[15,18], [16,25]]
 
 function merging(inter){
     
+    
 }
 
 // console.log(merging(intervals))
 
 
+// return the closest value 
+
+let nums = [8 ,-4,-2, 1]
+let target = 5
+
+function biggest(nums, targ){ // 1 < 
+    
+}
+
+console.log(biggest(nums, target))
