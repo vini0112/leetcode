@@ -63,9 +63,19 @@ let threeS = [-1,0,1,2,-1,-4]
 
 function threeSum(nums){
     
+
 }
 
 
 // console.log(threeSum(threeS))
 
+
+let part = [9,12,5,10,14,3,10], pivot = 10
+
+// output -> [9,5,3,10,10,12,14]
+function partition(nums, pivot){
+    
+}
+
+// console.log(partition(part, pivot))
 

@@ -7,7 +7,6 @@ let ops = ["5","3","C","D","+"]
 
 function baseballgame(operations) {
     
-    
 }
 
 
@@ -29,25 +28,16 @@ function baseballgame(operations) {
 // Every close bracket has a corresponding open bracket of the same type.
 
 
-let test = '{}'
+let test = '[{}'
 
 function parenthe(s){
 
-
+    
     
 }
 
 // console.log(parenthe(test))
 
-
-let nums = [9,12,5,10,14,3,10], pivot = 10
-
-// output -> [9,5,3,10,10,12,14]
-function partition(nums, pivot){
-
-}
-
-// console.log(partition(nums, pivot))
 
 
 
@@ -61,7 +51,7 @@ let tokens = ["2","1","+","3","*"]
 // Explanation: ((2 + 1) * 3) = 9
 
 function polish(tokens){
-
+    
 }
 
 // console.log(polish(tokens))
