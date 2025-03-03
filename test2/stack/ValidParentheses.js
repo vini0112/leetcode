@@ -20,11 +20,10 @@ function parenthe(s){
     }
 
     for(let l of s){
-        if(Object.values(mapping).includes(l)){
-            
+        if(Object.values(mapping).includes(l)){ // pega o value de acordo com mapping
             stack.push(l)
         }
-        else if(mapping.hasOwnProperty(l)){ // this checkes if there's the (l) property
+        else if(mapping.hasOwnProperty(l)){ // this checkes if there's the (l) property (no value)
             
             if(!stack.length || mapping[l] !== stack.pop()) return false
         }
@@ -32,4 +31,4 @@ function parenthe(s){
     return stack.length === 0
 }
 
-console.log(parenthe(test))
+// console.log(parenthe(test))

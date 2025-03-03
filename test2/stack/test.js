@@ -8,11 +8,11 @@ let ops = ["5","3","C","D","+"]
 function baseballgame(operations) {
     
     
-    
 }
 
 
 // console.log(baseballgame(ops))
+
 
 
 
@@ -32,9 +32,37 @@ function baseballgame(operations) {
 let test = '{}'
 
 function parenthe(s){
-    
+
+
     
 }
 
 // console.log(parenthe(test))
+
+
+let nums = [9,12,5,10,14,3,10], pivot = 10
+
+// output -> [9,5,3,10,10,12,14]
+function partition(nums, pivot){
+
+}
+
+// console.log(partition(nums, pivot))
+
+
+
+
+// REVERSE POLISH NOTATION 
+
+// The valid operators are '+', '-', '*', and '/'
+
+let tokens = ["2","1","+","3","*"]
+// Output: 9
+// Explanation: ((2 + 1) * 3) = 9
+
+function polish(tokens){
+
+}
+
+// console.log(polish(tokens))
 
