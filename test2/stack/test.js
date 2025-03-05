@@ -28,12 +28,10 @@ function baseballgame(operations) {
 // Every close bracket has a corresponding open bracket of the same type.
 
 
-let test = '[{}'
+let test = '[]'
 
 function parenthe(s){
 
-    
-    
 }
 
 // console.log(parenthe(test))
@@ -56,3 +54,45 @@ function polish(tokens){
 
 // console.log(polish(tokens))
 
+
+
+let temperatures = [73,74,75,71,69,72,76,70]
+// Output: [1,1,4,2,1,1,0,0]
+
+function temp(tempe){
+    let stack = []
+    let arr = new Array(temp.length).fill(0)
+
+    for(let i =0;i < tempe.length;i++){
+        //                      
+        while(stack.length && tempe[i] > tempe[stack[stack.length - 1]]){
+            const idx = stack.pop() // pega o index novo 
+            arr[idx] = i - idx // corrent - index novo, a diferença é os dias
+            
+        }
+
+        stack.push(i)
+    }
+    return
+}
+
+// console.log(temp(temperatures))
+
+
+
+
+// MIN STACK
+
+// MinStack() initializes the stack object.
+// void push(int val) pushes the element val onto the stack.
+// void pop() removes the element on the top of the stack.
+// int top() gets the top element of the stack.
+// int getMin() retrieves the minimum element in the stack.
+
+class MinStack{
+    constructor(){
+        
+    }
+}
+
+const ms = new MinStack()
