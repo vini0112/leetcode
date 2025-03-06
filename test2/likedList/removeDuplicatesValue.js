@@ -9,6 +9,7 @@ function sec(head){
     let res = head;
 
     while (head && head.next) {
+        // se curr === to next value -> next value = next next value
         if (head.val === head.next.val) {
             head.next = head.next.next;
         } else {
