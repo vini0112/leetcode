@@ -23,4 +23,4 @@ function longest(nums){
     return Math.max(max, cont)
 }
 
-// console.log(longest(nums))
+console.log(longest(nums))

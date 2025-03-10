@@ -35,8 +35,8 @@ function merging(inter){
 let nums = [8 ,-4,-2, 1]
 let target = 5
 
-function biggest(nums, targ){ // 1 < 
+function biggest(nums, targ){
     
 }
 
-console.log(biggest(nums, target))
+// console.log(biggest(nums, target))

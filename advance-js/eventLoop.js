@@ -10,5 +10,3 @@ function doSyncStuff(){
     console.log('start singing!')
 }
 
-
-

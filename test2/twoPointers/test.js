@@ -6,6 +6,7 @@ let nums = [-4,-1,0,3,10]
 
 function squareSortedArray(nums){
     
+
 }
 
 // console.log(squareSortedArray(nums))
@@ -22,7 +23,7 @@ function reversing(s){
     
 }
 
-// console.log(reversing())
+// console.log(reversing(s))
 
 
 
@@ -30,8 +31,6 @@ function reversing(s){
 let numbers = [2, 3, 4, 7 ,15], target = 9
 
 function twoSum2(nums, targ){
-
-
 
 }
 
@@ -62,6 +61,7 @@ function palindrome(s){
 let threeS = [-1,0,1,2,-1,-4]
 
 function threeSum(nums){
+
     
 
 }

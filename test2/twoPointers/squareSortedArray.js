@@ -20,7 +20,7 @@ function square(nums){
     let left = 0 // first pointer in the beginning
     let right = nums.length - 1 // secund pointer in the end
 
-    for(let i = nums.length - 1;i >= 0;i--){
+    for(let i = nums.length - 1;i >= 0;i--){//começa a colocar valor do ultimo
         if(Math.abs(nums[left]) > Math.abs(nums[right])){
             res[i] = (nums[left] ** 2)
             left++

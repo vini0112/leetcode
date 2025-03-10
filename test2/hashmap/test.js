@@ -1,10 +1,9 @@
 
 // try to conctruct ransom with magazine letters
 
-let ransomNote = "abc", magazine = "ajbc"
+let ransomNote = "aa", magazine = "ab"
 
 function random(ransom, magazine){
-        
 
 }
 
@@ -17,7 +16,6 @@ let s = "anagram", t = "nagaram" // this is true they have the same letters
 
 function anagram(s, t){
 
-    
     
 }
 
@@ -38,7 +36,7 @@ let board = [
     [
     '5', '3', '.',
     '.', '7', '.',
-    '.', '.', '.'
+    '.', '.', '9'
     ],
     [
     '6', '.', '.',
@@ -84,7 +82,7 @@ let board = [
 
 function sudoku(board){
     
-    
+
 }
 
 
@@ -109,10 +107,11 @@ function grupingAnagram(strs){
 let nums = [3,2,3] // 3
 let nums2 = [2,2,1,1,1,2,2] // 2
 function majority(nums){
-    
+
+
 }
 
-// console.log(majority(nums))
+// console.log(majority(nums2))
 
 
 // LONGEST SEQUENCE
@@ -122,8 +121,11 @@ let Exnums2 = [0,3,7,2,5,8,4,6,0 ,1] // 9
 let Exnums3 = [9,1,4,7,3,-1,0,5,8,-1,6] // 7
 function longest(num){
     
+    
+
+    
 }
 
-// console.log(longest(Exnums))
+// console.log(longest(Exnums3))
 
         
