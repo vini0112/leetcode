@@ -11,7 +11,6 @@ let ops = ["5","2",'C', "D","+"]
 function baseballgame(operations) {
     
     
-    
 }
 
 
@@ -33,7 +32,7 @@ function baseballgame(operations) {
 // Every close bracket has a corresponding open bracket of the same type.
 
 
-let test = '[]'
+let test = '{[]}'
 
 function parenthe(s){
     
@@ -51,7 +50,7 @@ function parenthe(s){
 
 // The valid operators are '+', '-', '*', and '/'
 
-let tokens = ["2","1","+","3","*"]
+let tokens = ["2","1","+","3","-"]
 // Output: 9
 // Explanation: ((2 + 1) * 3) = 9
 
@@ -62,6 +61,9 @@ function polish(tokens){
 // console.log(polish(tokens))
 
 
+
+// buld stack and a new array
+// compare the current value to previous
 
 let temperatures = [73,74,75,71,69,72,76,70]
 // Output: [1,1,4,2,1,1,0,0]
