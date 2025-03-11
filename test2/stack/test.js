@@ -1,11 +1,16 @@
 
-let ops = ["5","3","C","D","+"]
+let ops = ["5","2",'C', "D","+"]
+
+// Output: 30
+
 
 // + -> Record a new score that is the sum of the previous two scores
 // D -> Record a new score that is the double of the previous score
 // C -> Invalidate the previous score, removing it from the record
 
 function baseballgame(operations) {
+    
+    
     
 }
 
@@ -31,6 +36,8 @@ function baseballgame(operations) {
 let test = '[]'
 
 function parenthe(s){
+    
+
 
 }
 
@@ -60,20 +67,7 @@ let temperatures = [73,74,75,71,69,72,76,70]
 // Output: [1,1,4,2,1,1,0,0]
 
 function temp(tempe){
-    let stack = []
-    let arr = new Array(temp.length).fill(0)
-
-    for(let i =0;i < tempe.length;i++){
-        //                      
-        while(stack.length && tempe[i] > tempe[stack[stack.length - 1]]){
-            const idx = stack.pop() // pega o index novo 
-            arr[idx] = i - idx // corrent - index novo, a diferença é os dias
-            
-        }
-
-        stack.push(i)
-    }
-    return
+    
 }
 
 // console.log(temp(temperatures))
@@ -95,4 +89,4 @@ class MinStack{
     }
 }
 
-const ms = new MinStack()
+// const ms = new MinStack()

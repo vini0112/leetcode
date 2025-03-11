@@ -42,7 +42,9 @@ function baseballgame2(operations) {
         else score.push(+op)
         
         return score
-    }, []).reduce((sum, n) => sum + n, 0)
+        
+
+    }, []).reduce((sum, v) => sum + v,0)
 
 }
 
