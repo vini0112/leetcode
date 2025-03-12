@@ -10,7 +10,7 @@ function binary(nums, targ){
     
 }
 
-// console.log(binary(nums, target))
+// console.log(binary(nums, target));
 
 
 
@@ -23,14 +23,28 @@ function binary(nums, targ){
 
 let nums2 = [1,3,4,6], target2 = 5
 
-// Output: 2
+// Output: 3
 
 function searchInsert(nums, target) {
     
+    
 };
 
-// console.log(searchInsert(nums, target))
+// console.log(searchInsert(nums2, target2))
 
 
+
+
+// PERFECT SQUARE 
+// Given a positive integer num, return true if num is a perfect square or false otherwise.
+
+// A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itsel
+
+
+function square(num) {
+    
+};
+
+// console.log(square(16))
 
 
