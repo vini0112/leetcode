@@ -25,7 +25,7 @@ let nums2 = [1,3,4,6], target2 = 5
 
 // Output: 3
 
-function searchInsert(nums, target) {
+function searchInsert(nums, targ) {
     
     
 };
@@ -45,6 +45,24 @@ function square(num) {
     
 };
 
-// console.log(square(16))
+// console.log(square(14))
 
+
+
+
+// 2D MATRIX SEARCH
+
+
+// Each row is sorted in non-decreasing order.
+// The first integer of each row is greater than the last integer of the previous row.
+// Given an integer target, return true if target is in matrix or false otherwise.
+
+let matrix = [[1,2,3,7],[10,11,16,20],[23,30,34,60]], target3 = 3
+
+function twoD(matrix, target) {
+
+}
+
+
+// console.log(twoD(matrix, target))
 
