@@ -45,7 +45,7 @@ function square(num) {
     
 };
 
-// console.log(square(14))
+// console.log(square(4))
 
 
 
@@ -60,9 +60,29 @@ function square(num) {
 let matrix = [[1,2,3,7],[10,11,16,20],[23,30,34,60]], target3 = 3
 
 function twoD(matrix, target) {
-
+    
 }
 
 
-// console.log(twoD(matrix, target))
+// console.log(twoD(matrix, target3))
+
+
+
+
+// SEARCH ROTATED ARRAY 
+
+// Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+let nums4 = [4,5,6,7,0,1,2], target4 = 0
+
+// Output: 4
+
+function search(nums, target){
+    
+    
+};
+
+// console.log(search(nums4, target4))
+
+
 
