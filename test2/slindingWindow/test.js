@@ -4,7 +4,6 @@
 
 function maxSumSubarray(arr, k){
     
-    
 }
 
 
@@ -22,7 +21,7 @@ let nums = [1,1,0,1,1,1]
 
 function maxConsecutive(nums){
     
-
+    
 }
 
 // console.log(maxConsecutive(nums))
@@ -41,6 +40,39 @@ function maxCon(nums, k){
 }
 
 // console.log(maxCon(numss, k))
+
+
+
+
+
+
+
+// Given a string s, find the length of the longest substring without duplicate characters.
+
+let s = 'abcabcbb'
+// output 3 
+
+function longestSub(s){
+    
+}
+
+// console.log(longestSub(s))
+
+
+
+
+
+// Return the length of the longest substring containing the same letter you can get after performing the above operations.
+
+
+let s2 ='AABABBA', k2 = 1
+// Output: 4
+
+
+function longestRep(s, k){
+
+}
+
 
 
 

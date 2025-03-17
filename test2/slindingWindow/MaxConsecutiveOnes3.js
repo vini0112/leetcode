@@ -19,7 +19,6 @@ function maxCon(nums, k){
                 num_zeros -= 1 // minus 1 to become valid again 
             }
             l += 1 //nums[l] === 0 so we turn 'l' into 1 again
-            
         }
 
         max = Math.max(max, i-l+1) // taking the max of each iteration
