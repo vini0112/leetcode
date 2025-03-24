@@ -33,7 +33,6 @@ let numbers = [2, 3, 4, 7 ,15], target = 9
 
 function twoSum2(nums, targ){
     
-
 }
 
 // console.log(twoSum2(numbers, target))
@@ -146,6 +145,29 @@ function fourSum(nums, t){
 
 // console.log(fourSum(nums3, target3))
 
+
+
+
+
+
+
+// 3SUM CLOSEST 
+
+// Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+// Return the sum of the three integers
+
+// OBS: update the closest using Math.abs
+
+let nums4 = [-1,2,1,-4], target4 = 1
+// Output: 2
+//-4 -1 1 2
+// i  j   k
+
+function sumClosest(nums, t){
+
+}
+
+// console.log(sumClosest(nums4, target4))
 
 
 
