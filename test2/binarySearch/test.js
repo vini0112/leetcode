@@ -22,7 +22,7 @@ function binary(nums, targ){
 
 
 let nums2 = [1,3,4,6], target2 = 5
-
+//               l r
 // Output: 3
 
 function searchInsert(nums, targ) {
@@ -44,7 +44,6 @@ function searchInsert(nums, targ) {
 
 function square(num) {
 
-    
 };
 
 // console.log(square(3))
@@ -59,10 +58,9 @@ function square(num) {
 // The first integer of each row is greater than the last integer of the previous row.
 // Given an integer target, return true if target is in matrix or false otherwise.
 
-let matrix = [[1,2,3,7],[10,11,16,20],[23,30,34,60]], target3 = 6
+let matrix = [[1,2,3,7],[10,11,16,20],[23,30,34,60]], target3 = 60
 
 function twoD(matrix, target) {
-    
     
 }
 
@@ -76,7 +74,7 @@ function twoD(matrix, target) {
 
 // Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
 
-// OBS -> COMPARE LEFT TO MIDDLE AND MIDDLE TO RIGHT
+// OBS -> COMPARE MIDDLE TO LEFT AND MIDDLE TO RIGHT
 
 let nums4 = [4,5,6,7,0,1,2], target4 = 2
 // Output: 4
@@ -98,7 +96,7 @@ function search(nums, target){
 // If there is no common prefix, return an empty string "".
 
 
-let strs = ["flower","flow","floor"]
+let strs = ["flower","flo","floor"]
 // Output: "fl"
 
 function common(arr){

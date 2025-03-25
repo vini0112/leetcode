@@ -6,7 +6,6 @@ let nums = [-4,-1,0,3,10]
 
 function squareSortedArray(nums){
     
-
 }
 
 // console.log(squareSortedArray(nums))
@@ -83,7 +82,7 @@ function partition(nums, pivot){
 
 
 
-
+// CONTAINER WITH MOST WATER
 
 // Find two lines that together with the x-axis form a container, such that the container contains the most water.
 
@@ -105,7 +104,7 @@ function containerWater(height){
 
 
 
-
+// TRAPPING RAIN WATER
 
 // Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
 
@@ -118,7 +117,6 @@ let height2 = [0,1,0,2,1,0,1,3,2,1,2,1]
 
 function trap(height) {
     
-
 
 };
 
@@ -139,7 +137,7 @@ let nums3 = [1,0,-1,0,-2,2], target3 = 0
 
 
 function fourSum(nums, t){
-    
+
 }
 
 
@@ -170,6 +168,23 @@ function sumClosest(nums, t){
 // console.log(sumClosest(nums4, target4))
 
 
+
+
+
+
+
+
+
+// RETURN THE TOTAL OF NUMBERS DIFFERENT OF VAL
+
+let nums5 = [3,2,2,3], val5 = 3
+// Output: 2
+
+function removeElement(nums, val) {
+    
+}
+
+// console.log(removeElement(nums5, val5))
 
 
 
