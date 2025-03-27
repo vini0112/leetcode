@@ -76,10 +76,9 @@ function twoD(matrix, target) {
 
 // OBS -> COMPARE MIDDLE TO LEFT AND MIDDLE TO RIGHT
 
-let nums4 = [4,5,6,7,0,1,2], target4 = 2
+let nums4 = [4,5,6,7,0,1,2], target4 = 1
 // Output: 4
-function search(nums, target){
-    
+function search(nums, target){   
     
 };
 

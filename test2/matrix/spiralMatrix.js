@@ -56,7 +56,6 @@ function spiral(matrix){
             } 
             left++
         }
-
     }
 
     return nums

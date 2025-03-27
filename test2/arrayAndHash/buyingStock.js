@@ -12,8 +12,7 @@ function stocks(prices){
 
         // to sell
         //                this profit here receives the value 
-        profit = Math.max(profit, prices[i] - firtsValue)
-                        
+        profit = Math.max(profit, prices[i] - firtsValue)          
     }
 
     return profit
