@@ -31,4 +31,25 @@ function parenthe(s){
     return stack.length === 0
 }
 
+
+// better algorithm
+
+function secondParenthe(s){
+    let stack = []
+
+    for(let i = 0;i < s.length;i++){
+        if(s[i] === '{') stack.push('}')
+        
+        else if(s[i] === '(') stack.push(')')
+
+        else if(s[i] === '[') stack.push(']')
+
+        else if(stack.pop() !== s[i]) return false
+    }
+
+    return !stack.length
+
+}
+
+// console.log(secondParenthe(test))
 // console.log(parenthe(test))
